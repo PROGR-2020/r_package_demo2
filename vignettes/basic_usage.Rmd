@@ -1,0 +1,99 @@
+---
+title: "In-Place Operations in R"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{In-Place Operations in R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(inplaceops)  # Replace with your actual package name
+```
+
+# Introduction
+
+This vignette demonstrates the use of in-place operations provided by the inplaceOps package. These operations allow you to modify variables directly, making your code more concise and potentially more efficient.
+
+## Arithmetic Operations
+
+### Addition
+
+```{r}
+x <- 5
+x %+=% 3
+print(x)
+```
+
+### Subtraction
+
+```{r}
+y <- 10
+y %-=% 4
+print(y)
+```
+
+## Vector Operations
+
+### Concatenation
+
+```{r}
+v <- c(1, 2, 3)
+v %c=% c(4, 5)
+print(v)
+```
+
+### Union
+
+```{r}
+set1 <- c(1, 2, 3)
+set1 %union=% c(3, 4, 5)
+print(set1)
+```
+
+### Set Difference
+
+```{r}
+set2 <- c(1, 2, 3, 4, 5)
+set2 %setdiff=% c(2, 4)
+print(set2)
+```
+
+## Operations by Variable Name
+
+These functions allow you to modify variables by their name as a string.
+
+### Addition
+
+```{r}
+z <- 7
+assignPlus("z", 5)
+print(z)
+```
+
+### Concatenation
+
+```{r}
+words <- c("hello", "world")
+assignC("words", "!")
+print(words)
+```
+
+### Set Difference
+
+```{r}
+numbers <- c(1, 2, 3, 4, 5)
+assignSetdiff("numbers", c(2, 4))
+print(numbers)
+```
+
+# Conclusion
+
+These in-place operations can make your R code more readable and potentially more efficient, especially when working with large datasets or in loops where you're repeatedly modifying the same variable.
