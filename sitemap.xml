@@ -1,0 +1,22 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/articles/basic_usage.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/assignC.html</loc></url>
+<url><loc>/reference/assignMinus.html</loc></url>
+<url><loc>/reference/assignPlus.html</loc></url>
+<url><loc>/reference/assignSetdiff.html</loc></url>
+<url><loc>/reference/assignUnion.html</loc></url>
+<url><loc>/reference/grapes-c-equals-grapes.html</loc></url>
+<url><loc>/reference/grapes-equals-grapes.html</loc></url>
+<url><loc>/reference/grapes-plus-equals-grapes.html</loc></url>
+<url><loc>/reference/grapes-setdiff-equals-grapes.html</loc></url>
+<url><loc>/reference/grapes-union-equals-grapes.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/inplaceops-package.html</loc></url>
+</urlset>
+
