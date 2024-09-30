@@ -1,21 +1,22 @@
-Package: <package name>
-Title: <title>
+Package: inplaceops
+Title: Inplace Operators for R
 Version: 0.0.1
 Authors@R: c(
-  person(given = ..., family = ..., role = c("aut", "cre"), email = ...)
+  person(given = "Martin", family = "Binder", role = c("aut", "cre"), email = "things.developer@mb706.com")
   )
-Description: <description>
-License: ...
-URL: ...
-BugReports: ...
+Description: Inplace operators for R. This does operations like `x += 1` by writing `1 %+=% x`.
+License: MIT + file LICENSE
+URL: https://github.com/PROGR-2020/r_package_demo2
+BugReports: https://github.com/PROGR-2020/r_package_demo2/issues
 ByteCompile: true
 Encoding: UTF-8
 Config/testthat/edition: 3
 Config/testthat/parallel: true
 Roxygen: list(markdown = TRUE)
 Depends:
-    ...
+    R (>= 3.6)
 Imports:
-    ...
+    checkmate
 Suggests:
     testthat
+RoxygenNote: 7.3.2
